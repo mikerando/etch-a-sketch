@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <title>Etcher Sketcher</title>
+    </head>
+
+    <body>
+        <div id="cleaners">
+            <button id="reset">RESET ALL</button>
+            <button id="clear">CLEAR CURRENT</button>
+            <button id="erase">ERASER ONE</button>
+        </div>
+        <div id="container"></div>
+        <div id="pickers">
+            <select id="colorPick">
+                <option>COLOR</option>
+                <option value="rgb(0,0,0)">BLACK</option>
+                <option value="rgb(255,0,0)">RED</option>
+                <option value="rgb(0,255,0)">GREEN</option>
+                <option value="rgb(0,0,255">BLUE</option>
+                <option value="rgb(255,255,0)">YELLOW</option>
+                <option value="rgb(255,128,0)">ORANGE</option>
+                <option value="rgb(128,0,255)">PURPLE</option>
+                <option value="rgb(255,255,255)">WHITE</option>
+            </select>
+            <div class="shadeCheck">
+                <input type="checkbox" id="shaded" name="shaded">
+                    <label for="shaded">SHADE IN</label>
+            </div>
+            <form id="sizeForm" action="#">
+                <input type="text" id="sizeInput" value="">
+            </form>
+            <button id="ranColor">RAINBOW</button>
+        </div>
+    </body>
+    <script src="script.js"></script>
+</html>

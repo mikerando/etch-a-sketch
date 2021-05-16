@@ -1,0 +1,63 @@
+html, body {
+    display: flex;
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+}
+
+#container {
+    display: flex;
+    margin: 0 auto;
+    position: relative;
+    width: 50%;
+    height: 50%;
+    bottom: 50px;
+    background-color: grey;
+    flex-direction: column;
+    border: rgb(180,0,0) solid 100px;
+    border-radius: 5%;
+}
+
+#pickers, #cleaners{
+    display: flex;
+    position: relative;
+    margin: 0 auto;
+    width: 60%;
+    justify-content: space-between;
+}
+
+#pickers {
+    bottom: 135px;
+}
+
+#cleaners {
+    z-index: 1;
+    top: 30px;
+}
+
+button, #colorPick {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+#colorPick, #ranColor {
+    background-color: white;
+}
+
+#sizeForm, #sizeInput {
+    width: 150px;
+    height: 25px;
+    background-color: rgb(255,100,100);
+}
+
+div[class^="row"] {
+    display: flex;
+    flex-grow: 1;
+}
+
+span[class^="grid"] {
+    background-color: grey;
+    flex-grow: 1;
+}
